@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Монастырёв</title>
+        <link rel="stylesheet" href="./css/main.css" />
+    </head>
+    <body id="body" class="body">
+        <header class="header">
+            <div class="container">
+                <div class="header__top">
+                    <img src="./img/logo.png" alt="Монастырёв" class="header__logo" />
+                    <div class="location__wrapper">
+                        <a href="#" class="location effect-underline" data-dropDown="locationDropDown">Владивосток</a>
+                        <div class="location-dropdown modal modal__content" id="locationDropDown">
+                            <button class="location-dropdown__close modal__close">
+                                <img src="./img/close.svg" alt="close" />
+                            </button>
+                            <div class="location-dropdown__text">Информация о доставке будет отображаться для региона:</div>
+                            <div class="location-dropdown__city">Владивосток</div>
+                            <button class="location-dropdown__sumbit modal__close">Да, выбрать</button>
+                            <div class="location-dropdown__popup-link">
+                                <a href="#" class="popup-link effect-underline" data-modal="locationPopup">Нет, выбрать другой город</a>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="header__nav">
+                        <a href="#" class="nav__link effect-underline"><b>Адреса аптека</b></a>
+                        <a href="#" class="nav__link effect-underline">Доставка</a>
+                        <a href="#" class="nav__link effect-underline">О нас</a>
+                        <a href="#" class="nav__link effect-underline">Акции</a>
+                    </nav>
+                    <button class="header__btn">Версия для слабовидящих</button>
+                    <a href="tel:8 800 707 77 33" class="header__contact effect-underline">8 800 707 77 33</a>
+                </div>
+                <div class="header__bot">
+                    <button class="header__catalog" id="catalogBtn">Каталог товаров</button>
+                    <div class="header__search">
+                        <input type="text" class="search__input" placeholder="Средство,  действующее вещество, проблема" />
+                        <button class="search__btn">
+                            <img src="./img/search.svg" alt="search" />
+                        </button>
+                        <div class="search__dropdown">
+                            <div class="search__items">
+                                <span>Когацел</span>
+                                <span>Бепантен</span>
+                                <span>Cупрадин</span>
+                                <span>Bio-Oil</span>
+                                <span>VP Laboratory LTD</span>
+                                <span>Алкодетокс</span>
+                            </div>
+                            <div class="search__categories">
+                                <a href="#" class="categories__card">
+                                    <img src="./img/sale.png" alt="sale" />
+                                    <span>Скидки</span>
+                                </a>
+                                <a href="#" class="categories__card">
+                                    <img src="./img/heart.png" alt="heart" />
+                                    <span>Аптечные товары</span>
+                                </a>
+                                <a href="#" class="categories__card">
+                                    <img src="./img/cream.png" alt="cream" />
+                                    <span>Косметика</span>
+                                </a>
+                                <a href="#" class="categories__card">
+                                    <img src="./img/temp.png" alt="temp" />
+                                    <span>Медицинские приборы</span>
+                                </a>
+                                <a href="#" class="categories__card">
+                                    <img src="./img/glass.png" alt="glass" />
+                                    <span>Оптика</span>
+                                </a>
+                                <a href="#" class="categories__card">
+                                    <img src="./img/cup.png" alt="cup" />
+                                    <span>Здоровое питание</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__profile">
+                        <img src="./img/user.svg" alt="profile__icon" class="profile__icon" />
+                        <div class="profile__wrapper">
+                            <div class="profile__name">Константин</div>
+                            <a href="#" class="profile__link effect-underline">Ваш профиль</a>
+                        </div>
+                    </div>
+                    <a href="#" class="header__favorites">
+                        <img src="./img/star.svg" alt="star" />
+                    </a>
+                    <a href="#" class="header__shopcart">
+                        <div class="shopcart__count">13</div>
+                        <img src="./img/shopcart.svg" alt="shopcart" class="shopcart__img" />
+                    </a>
+                </div>
+                <div class="catalog__wrapper" id="catalog">
+                    <div class="catalog">
+                        <div class="catalog__title">
+                            <span>категории</span>
+                            <span class="inactive">бренд</span>
+                        </div>
+                        <div class="catalog__item">
+                            <img src="./img/heart.png" alt="heart" class="catalog__img" />
+                            <a href="#" class="catalog__link effect-underline">Аптечные товары</a>
+                            <img src="./img/catalog-arrow.svg" alt="arrow" class="catalog__arrow-right" />
+                            <div class="catalog__open">
+                                <ul class="catalog__list">
+                                    <li>
+                                        <a href="#" class="catalog__open-link effect-underline">БАДы и Витамины</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="catalog__open-link effect-underline">Косметические средства с лечебным эффектом</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="catalog__open-link effect-underline">Лекарственные препараты</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="catalog__open-link effect-underline">Лечебное и диетическое питание</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="catalog__open-link effect-underline">Медицинские изделия</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="catalog__open-link effect-underline">Минеральные воды</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="catalog__open-link effect-underline">Спортивное питание</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="catalog__open-link effect-underline">Для здоровья</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="catalog__item">
+                            <img src="./img/cream.png" alt="cream" class="catalog__img" />
+                            <a href="#" class="catalog__link effect-underline">Косметика</a>
+                            <img src="./img/catalog-arrow.svg" alt="arrow" class="catalog__arrow-right" />
+                        </div>
+                        <div class="catalog__item">
+                            <img src="./img/cup.png" alt="cup" class="catalog__img" />
+                            <a href="#" class="catalog__link effect-underline">Здоровое питание</a>
+                            <img src="./img/catalog-arrow.svg" alt="arrow" class="catalog__arrow-right" />
+                        </div>
+                        <div class="catalog__item">
+                            <img src="./img/house.png" alt="house" class="catalog__img" />
+                            <a href="#" class="catalog__link effect-underline">Для дома и семьи</a>
+                            <img src="./img/catalog-arrow.svg" alt="arrow" class="catalog__arrow-right" />
+                        </div>
+                        <div class="catalog__item">
+                            <img src="./img/baby.png" alt="baby" class="catalog__img" />
+                            <a href="#" class="catalog__link effect-underline">Мама и малыш</a>
+                            <img src="./img/catalog-arrow.svg" alt="arrow" class="catalog__arrow-right" />
+                        </div>
+                        <div class="catalog__item">
+                            <img src="./img/glass.png" alt="glass" class="catalog__img" />
+                            <a href="#" class="catalog__link effect-underline">Оптика</a>
+                            <img src="./img/catalog-arrow.svg" alt="arrow" class="catalog__arrow-right" />
+                        </div>
+                        <div class="catalog__item">
+                            <img src="./img/temp.png" alt="temp" class="catalog__img" />
+                            <a href="#" class="catalog__link effect-underline">Медицинские приборы</a>
+                            <img src="./img/catalog-arrow.svg" alt="arrow" class="catalog__arrow-right" />
+                        </div>
+                        <div class="catalog__item">
+                            <img src="./img/sale.png" alt="sale" class="catalog__img" />
+                            <a href="#" class="catalog__link effect-underline">Скидки</a>
+                            <img src="./img/catalog-arrow.svg" alt="arrow" class="catalog__arrow-right" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <header class="mobile__header">
+            <button class="burger" id="burger">
+                <span class="burger__item">burger</span>
+            </button>
+            <button class="mobile__search">
+                <img src="./img/search.svg" alt="" />
+            </button>
+            <img src="./img/logo.png" alt="Монастырёв" class="mobile__logo" />
+            <a href="#" class="mobile-shopcart">
+                <div class="mobile-shopcart__count">13</div>
+                <img src="./img/shopcart.svg" alt="shopcart" class="mobile-shopcart__img" />
+            </a>
+        </header>
+
+        <div class="burger__menu" id="burgerMenu">
+            <div class="burger__content">
+                <div class="burger__catalog">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <input type="checkbox" id="accordion-1" class="accordion-item__input" />
+                            <label for="accordion-1" class="accordion-item__trigger">
+                                <img src="./img/catalog-mobile.svg" alt="catalog" />
+                                <span>Каталог</span>
+                            </label>
+                            <div class="accordion-item__content">
+                                <div class="catalog__title">
+                                    <span>категории</span>
+                                    <span class="inactive">бренд</span>
+                                </div>
+                                <div class="catalog__item">
+                                    <img src="./img/heart.png" alt="heart" class="catalog__img" />
+                                    <a href="#" class="catalog__link effect-underline">Аптечные товары</a>
+                                </div>
+                                <div class="catalog__item">
+                                    <img src="./img/cream.png" alt="cream" class="catalog__img" />
+                                    <a href="#" class="catalog__link effect-underline">Косметика</a>
+                                </div>
+                                <div class="catalog__item">
+                                    <img src="./img/cup.png" alt="cup" class="catalog__img" />
+                                    <a href="#" class="catalog__link effect-underline">Здоровое питание</a>
+                                </div>
+                                <div class="catalog__item">
+                                    <img src="./img/house.png" alt="house" class="catalog__img" />
+                                    <a href="#" class="catalog__link effect-underline">Для дома и семьи</a>
+                                </div>
+                                <div class="catalog__item">
+                                    <img src="./img/baby.png" alt="baby" class="catalog__img" />
+                                    <a href="#" class="catalog__link effect-underline">Мама и малыш</a>
+                                </div>
+                                <div class="catalog__item">
+                                    <img src="./img/glass.png" alt="glass" class="catalog__img" />
+                                    <a href="#" class="catalog__link effect-underline">Оптика</a>
+                                </div>
+                                <div class="catalog__item">
+                                    <img src="./img/temp.png" alt="temp" class="catalog__img" />
+                                    <a href="#" class="catalog__link effect-underline">Медицинские приборы</a>
+                                </div>
+                                <div class="catalog__item">
+                                    <img src="./img/sale.png" alt="sale" class="catalog__img" />
+                                    <a href="#" class="catalog__link effect-underline">Скидки</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="burger__card">
+                    <img src="./img/user.svg" alt="profile__icon" class="item__icon" />
+                    <div class="burger__wrapper">
+                        <a href="#" class="burger__link">Профиль</a>
+                        <div class="burger__name">Константин</div>
+                    </div>
+                </div>
+
+                <div class="burger__card">
+                    <img src="./img/star.svg" alt="star" class="item__icon" />
+                    <div class="burger__wrapper">
+                        <a href="#" class="burger__link">Избранное</a>
+                        <div class="burger__name">15 товаров</div>
+                    </div>
+                </div>
+
+                <div class="burger__card">
+                    <img src="./img/location.svg" alt="star" class="item__icon" />
+                    <div class="burger__wrapper">
+                        <a href="#" class="burger__link">Вольно-Надеждинск</a>
+                        <div class="burger__name">15 аптек</div>
+                    </div>
+                </div>
+                <ul class="burger__links">
+                    <li><a href="#" class="burger__link effect-underline">Акции</a></li>
+                    <li><a href="#" class="burger__link effect-underline">Доставка</a></li>
+                    <li><a href="#" class="burger__link effect-underline">Новости</a></li>
+                    <li><a href="#" class="burger__link effect-underline">О компании</a></li>
+                </ul>
+
+                <div class="burger__call">
+                    <img src="./img/call.svg" alt="call" />
+                    <div class="call__wrapper">
+                        <a href="tel:8 800 707 77 33" class="call__number">8 800 707 77 33</a>
+                        <div class="burger__name">Позвонить бесплатно</div>
+                    </div>
+                </div>
+
+                <div class="burger__stores">
+                    <img src="./img/app-apple.png" alt="app-apple" />
+                    <img src="./img/app-google.png" alt="app-google" />
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="slider">
+                <div class="slider__item">
+                    <button class="slide__btn">Подробнее</button>
+                </div>
+                <div class="slider__item">
+                    <button class="slide__btn">Подробнее</button>
+                </div>
+                <div class="slider__item">
+                    <button class="slide__btn">Подробнее</button>
+                </div>
+                <div class="slider__item">
+                    <button class="slide__btn">Подробнее</button>
+                </div>
+                <div class="slider__item">
+                    <button class="slide__btn">Подробнее</button>
+                </div>
+            </div>
+        </div>
+        <div class="location__popup modal" id="locationPopup">
+            <div class="popup__body">
+                <div class="popup__title">Выберите город</div>
+                <div class="popup__content">
+                    <ul class="location__list">
+                        <li>
+                            <a href="#" class="location__item current effect-underline">Владивосток</a>
+                            <span>12 аптек</span>
+                        </li>
+                        <li>
+                            <a href="#" class="location__item effect-underline">Де-Фриз</a>
+                            <span>12 аптек</span>
+                        </li>
+                        <li>
+                            <a href="#" class="location__item effect-underline">Арсеньев</a>
+                            <span>12 аптек</span>
+                        </li>
+                        <li>
+                            <a href="#" class="location__item effect-underline">Артем</a>
+                            <span>12 аптек</span>
+                        </li>
+                        <li>
+                            <a href="#" class="location__item effect-underline">Большой Камень</a>
+                            <span>12 аптек</span>
+                        </li>
+                        <li>
+                            <a href="#" class="location__item effect-underline">Вольно-Надеждинское</a>
+                            <span>12 аптек</span>
+                        </li>
+                        <li>
+                            <a href="#" class="location__item effect-underline">Врангель</a>
+                            <span>12 аптек</span>
+                        </li>
+                    </ul>
+                    <ul class="location__list">
+                        <li>
+                            <a href="#" class="location__item effect-underline">Дальнегорск</a>
+                            <span>12 аптек</span>
+                        </li>
+                        <li>
+                            <a href="#" class="location__item effect-underline">Находка</a>
+                            <span>12 аптек</span>
+                        </li>
+                        <li>
+                            <a href="#" class="location__item effect-underline">Сибирцево</a>
+                            <span>12 аптек</span>
+                        </li>
+                        <li>
+                            <a href="#" class="location__item effect-underline">Славянка</a>
+                            <span>12 аптек</span>
+                        </li>
+                        <li>
+                            <a href="#" class="location__item effect-underline">Спасск-Дальний Камень</a>
+                            <span>12 аптек</span>
+                        </li>
+                        <li>
+                            <a href="#" class="location__item effect-underline">Уссурийск</a>
+                            <span>12 аптек</span>
+                        </li>
+                    </ul>
+                    <ul class="location__list">
+                        <li>
+                            <a href="#" class="location__item effect-underline"><b>Москва</b></a>
+                            <span>12 аптек</span>
+                        </li>
+                        <li>
+                            <a href="#" class="location__item effect-underline"><b>Новосибирск</b></a>
+                            <span>12 аптек</span>
+                        </li>
+                        <li>
+                            <a href="#" class="location__item effect-underline"><b>Хабаровск</b></a>
+                            <span>12 аптек</span>
+                        </li>
+                    </ul>
+                    <button class="popup__close modal__close">
+                        <img src="./img/close.svg" alt="close" />
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="./js/slick.min.js"></script>
+        <script src="./js/script.js"></script>
+        <script src="./js/app.js"></script>
+    </body>
+</html>
