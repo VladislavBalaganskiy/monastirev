@@ -316,6 +316,8 @@ a.effect-underline:hover:after {
 .profile__name {
     color: #4a4a4a;
     font-weight: 700;
+    text-decoration: none;
+    position: relative;
 }
 
 .profile__link {
@@ -323,7 +325,9 @@ a.effect-underline:hover:after {
     font-size: 13px;
     color: #8f8f8f;
     position: relative;
+    margin-top: 5px;
 }
+
 
 .header__favorites {
     transition: all 0.5s ease-in-out;
